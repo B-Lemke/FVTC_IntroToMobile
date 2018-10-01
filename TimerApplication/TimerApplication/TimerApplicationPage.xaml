@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:TimerApplication" x:Class="TimerApplication.TimerApplicationPage">
+	<StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+        <Label x:Name="lblTimeDisplay" Text="0️⃣0️⃣:0️⃣0️⃣:0️⃣0️⃣" Margin="0, 0, 0, 50" FontSize="40"/>
+
+
+        <Button x:Name="btnStart" Text="Start" Clicked="startTimer" FontSize="20" />
+        <Button x:Name="btnStop" Text="Stop" Clicked="stopTimer" FontSize="20" />
+        <Button x:Name="btnClear" Text="Clear" Clicked="resetTimer" FontSize="20" />
+
+        
+    </StackLayout>
+</ContentPage>

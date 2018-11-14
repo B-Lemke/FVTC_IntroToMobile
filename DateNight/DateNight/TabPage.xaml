@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:DateNight"
+    x:Class="DateNight.TabPage">
+
+
+    <local:CoffeePage Title="Coffee" Icon="coffeeIcon.png"  x:Name="firstCoffeePage" />
+    <local:DinnerPage Title="Dinner" Icon="dinnerIcon.png" x:Name="secondDinnerPage" />
+    <local:MoviePage Title="Movie" Icon="movieIcon.png" x:Name="thirdMoviePage" />
+    <local:TotalPage Title="Total" Icon="totalIcon.png" x:Name="fouthTotalPage" />
+</TabbedPage>

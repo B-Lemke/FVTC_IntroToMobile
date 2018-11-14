@@ -6,7 +6,7 @@
 
         <Button x:Name="btnStart" Text="Start" Clicked="startTimer" FontSize="20" />
         <Button x:Name="btnStop" Text="Stop" Clicked="stopTimer" FontSize="20" />
-        <Button x:Name="btnClear" Text="Clear" Clicked="resetTimer" FontSize="20" />
+        <Button x:Name="btnClear" Text="Reset" Clicked="resetTimer" FontSize="20" />
 
         
     </StackLayout>

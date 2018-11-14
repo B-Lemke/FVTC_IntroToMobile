@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:local="clr-namespace:MovieList"
+    Title="Movie List"
+    x:Class="MovieListSettings.MovieListPage">
+    <Grid Margin="15">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition />
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Label Text="Movie List" Grid.Row="0" HorizontalTextAlignment="Center" FontSize="Large" />
+        <ListView Grid.Row="1" x:Name="MovieListView" HasUnevenRows="True">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition />
+                                <RowDefinition />
+                            </Grid.RowDefinitions>
+                            <Label Grid.Row="0" Text="{Binding Title}" FontSize="Large" FontAttributes="Bold" />
+                            <StackLayout Grid.Row="1" Orientation="Horizontal">
+                                <Label Text="Rating:" />
+                                <Label Text="{Binding Rating}" />
+                            </StackLayout>
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+
+        </ListView>
+        <Button Grid.Row="2" Text="Add Movie" Clicked="Handle_Clicked" />
+    </Grid>
+    
+</ContentPage>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="MovieListSettings.AddMoviePage">
+<ScrollView>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition />    
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition />    
+        </Grid.ColumnDefinitions>
+
+        <Label Text="Title: " Grid.Row="0" Grid.Column="0" />
+        <Entry x:Name="entTitle" Grid.Row="0" Grid.Column="1"/>
+
+        <Label Text="Rating: " Grid.Row="1" Grid.Column="0" />
+        <Entry x:Name="entRating" Grid.Row="1" Grid.Column="1"/>
+
+        <Button Text="Add Movie" Clicked="Handle_Add_Movie_Clicked" Grid.ColumnSpan="2" Grid.Row="2" />
+
+
+    </Grid>
+</ScrollView>
+</ContentPage>

@@ -20,27 +20,26 @@ namespace TimerApplication
 
         bool updateTimer()
         {
-
-            sec++;
-
-            //check is there are too many seconds
-            if (sec == 60)
-            {
-                sec = 0;
-                min++;
-                //check if there are too many minutes
-                if (min == 60)
-                {
-                    min = 0;
-                    hour++;
-                }
-            }
-
             //prevent from updating if it has been stopped
             if (timerIncreasing)
             {
+                sec++;
+
+                //check is there are too many seconds
+                if (sec == 60)
+                {
+                    sec = 0;
+                    min++;
+                    //check if there are too many minutes
+                    if (min == 60)
+                    {
+                        min = 0;
+                        hour++;
+                    }
+                }
                 displayTime(hour, min, sec);
             }
+
 
             //variable controlled by outside button clicks
             return timerIncreasing;
@@ -53,7 +52,11 @@ namespace TimerApplication
 
             displayTime(hour, min, sec);
 
-            Device.StartTimer(updateInterval, updateTimer);
+            if(timerIncreasing)
+            {
+                Device.StartTimer(updateInterval, updateTimer);
+            }
+
 
             btnStart.IsEnabled = false;
             btnStop.IsEnabled = true;
@@ -141,6 +144,7 @@ namespace TimerApplication
                     case '9':
                         emojifiedString += "9️⃣";
                         break;
+
                 }
             }
             return emojifiedString;

@@ -9,9 +9,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Android.Runtime.ResourceDesignerAttribute("TimerApplication.Droid.Resource", IsApplication=true)]
+[assembly: global::Android.Runtime.ResourceDesignerAttribute("DistanceConverter.Droid.Resource", IsApplication=true)]
 
-namespace TimerApplication.Droid
+namespace DistanceConverter.Droid
 {
 	
 	
@@ -26,7 +26,7 @@ namespace TimerApplication.Droid
 		
 		public static void UpdateIdValues()
 		{
-			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::TimerApplication.Droid.Resource.Attribute.actionBarSize;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::DistanceConverter.Droid.Resource.Attribute.actionBarSize;
 		}
 		
 		public partial class Animation

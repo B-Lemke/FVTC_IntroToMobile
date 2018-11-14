@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="DateNight.TotalPage">
+    <ScrollView>
+        <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+            <Label Text="Total Date Night Prices" HorizontalTextAlignment="Center" />
+            <Image Source="total.png" Aspect="AspectFill"/>
+            <Label x:Name="lblTotal" HorizontalTextAlignment="Center"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="DateNight.MoviePage">
+    <ScrollView>
+        <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+            <Label Text="Enter Price for Movie" HorizontalTextAlignment="Center"/>
+            <Image Source="movie.png" HeightRequest="200" Aspect="AspectFill"/>
+            <Entry x:Name="txtMoviePrice" />
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

@@ -26,7 +26,7 @@ namespace MovieListSettings
             base.OnAppearing();
 
             MovieListView.ItemsSource = null;
-            MovieListView.ItemsSource = App.MyMovieList;
+            MovieListView.ItemsSource = App.Database.GetAllMovies();
         }
     }
 }

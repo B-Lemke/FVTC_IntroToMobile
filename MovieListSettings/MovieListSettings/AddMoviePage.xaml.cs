@@ -25,7 +25,7 @@ namespace MovieListSettings
                 newMovie.Title = entTitle.Text;
                 newMovie.Rating = entRating.Text;
 
-                App.MyMovieList.Add(newMovie);
+                App.Database.InsertMovie(newMovie);
 
                 Navigation.PopAsync();
             }

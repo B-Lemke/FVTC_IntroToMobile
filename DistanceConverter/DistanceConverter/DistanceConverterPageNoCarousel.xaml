@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:local="clr-namespace:DistanceConverter" 
+    xmlns:cv="clr-namespace:Xamarin.Forms;assembly=Xamarin.Forms.CarouselView"
+    x:Class="DistanceConverter.DistanceConverterPage">
+    <ScrollView>
+
+
+                    <StackLayout>
+
+            <Label x:Name="input" Text="{Binding Input}"/>
+            <Label x:Name="output" Text="{Binding Output}"/>
+            <Entry x:Name="entry" Text="{Binding Input}"/>
+            </StackLayout>
+                <!--       
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="50"/>
+            </Grid.RowDefinitions>
+
+            <Label Grid.Row="0" Text="Welcome to the distance converter!" Margin="18" FontSize="18" FontAttributes="Bold" />
+
+                 <cv:CarouselView Grid.Row="1" x:Name="DistanceCarousel">
+                <cv:CarouselView.ItemTemplate>
+                    <DataTemplate>
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                                    
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="Auto" />
+                                </Grid.ColumnDefinitions>
+                                <Label Grid.Row="0" Grid.ColumnSpan="5" Text="{Binding Title}"/>
+                                <Entry Grid.Row="1" Grid.ColumnSpan="5" Text="{Binding Input}"/>
+
+                                <Label Grid.Row="2" Grid.ColumnSpan="5" Text="The conversion is:" />
+
+                                Results row -->
+            <!--
+                                <Label Grid.Row="3" Grid.Column="0" Text="{Binding Input}" />
+                                <Label Grid.Row="3" Grid.Column="1" Text="{Binding StartUnit}" />
+                                <Label Grid.Row="3" Grid.Column="2" Text=" = " />
+                                <Label Grid.Row="3" Grid.Column="3" Text="{Binding Output}" />
+                                <Label Grid.Row="3" Grid.Column="4" Text="{Binding EndUnit}" />
+                            </Grid>
+                    </DataTemplate>
+                </cv:CarouselView.ItemTemplate>
+            </cv:CarouselView>
+
+            <Label Grid.Row="2"  Text="Footer. Yeet." />
+        </Grid>
+
+                        -->
+    </ScrollView>
+</ContentPage>

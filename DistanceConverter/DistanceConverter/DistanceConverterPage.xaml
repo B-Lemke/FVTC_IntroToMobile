@@ -4,6 +4,9 @@
     xmlns:cv="clr-namespace:Xamarin.Forms;assembly=Xamarin.Forms.CarouselView"
     x:Class="DistanceConverter.DistanceConverterPage">
     <ScrollView>
+
+
+
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
@@ -12,7 +15,8 @@
             </Grid.RowDefinitions>
 
             <Label Grid.Row="0" Text="Welcome to the distance converter!" Margin="18" FontSize="18" FontAttributes="Bold" />
-            <cv:CarouselView Grid.Row="1" x:Name="DistanceCarousel">
+
+                 <cv:CarouselView Grid.Row="1" x:Name="DistanceCarousel">
                 <cv:CarouselView.ItemTemplate>
                     <DataTemplate>
                             <Grid>
@@ -23,24 +27,20 @@
                                     <RowDefinition Height="Auto" />
                                                     
                                 </Grid.RowDefinitions>
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="Auto" />
-                                    <ColumnDefinition Width="Auto" />
-                                    <ColumnDefinition Width="Auto" />
-                                    <ColumnDefinition Width="Auto" />
-                                    <ColumnDefinition Width="Auto" />
-                                </Grid.ColumnDefinitions>
-                                <Label Grid.Row="0" Grid.ColumnSpan="5" Text="{Binding Title}"/>
-                                <Entry Grid.Row="1" Grid.ColumnSpan="5" Text="{Binding Input}"/>
+  
+                                <Label Grid.Row="0" Text="{Binding Title}" HorizontalTextAlignment="Center"/>
+                                <Entry Grid.Row="1"  Text="{Binding Input}"/>
 
-                                <Label Grid.Row="2" Grid.ColumnSpan="5" Text="The conversion is:" />
+                                <Label Grid.Row="2" Text="The conversion is:" />
 
-                                <!-- Results row -->
-                                <Label Grid.Row="3" Grid.Column="0" Text="{Binding Input}" />
-                                <Label Grid.Row="3" Grid.Column="1" Text="{Binding StartUnit}" />
-                                <Label Grid.Row="3" Grid.Column="2" Text=" = " />
-                                <Label Grid.Row="3" Grid.Column="3" Text="{Binding Output}" />
-                                <Label Grid.Row="3" Grid.Column="4" Text="{Binding EndUnit}" />
+                                        <!--  Results row -->
+                                <StackLayout Grid.Row="3" Orientation="Horizontal">
+                                    <Label  Text="{Binding Input}" />
+                                    <Label  Text="{Binding StartUnit}" />
+                                    <Label  Text=" = " />
+                                    <Label  Text="{Binding Output}" />
+                                    <Label  Text="{Binding EndUnit}" />
+                                </StackLayout>
                             </Grid>
                     </DataTemplate>
                 </cv:CarouselView.ItemTemplate>
@@ -48,5 +48,7 @@
 
             <Label Grid.Row="2"  Text="Footer. Yeet." />
         </Grid>
+
+
     </ScrollView>
 </ContentPage>

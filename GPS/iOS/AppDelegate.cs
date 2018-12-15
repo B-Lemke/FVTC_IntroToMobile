@@ -14,6 +14,8 @@ namespace GPS.iOS
         {
             global::Xamarin.Forms.Forms.Init();
 
+            Xamarin.Forms.DependencyService.Register<IosLocationService>();
+
             LoadApplication(new App());
 
             return base.FinishedLaunching(app, options);

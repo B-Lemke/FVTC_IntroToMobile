@@ -18,6 +18,8 @@ namespace GPS.Droid
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
 
+            Xamarin.Forms.DependencyService.Register<AndroidLocationService>();
+            Plugin.CurrentActivity.CrossCurrentActivity.Current.Init(this, bundle);
             base.OnCreate(bundle);
 
             global::Xamarin.Forms.Forms.Init(this, bundle);

@@ -7,8 +7,8 @@ namespace GPS
         public App()
         {
             InitializeComponent();
-
-            MainPage = new GPSPage();
+            GPSPage firstPage = new GPSPage();
+                MainPage =  new NavigationPage(firstPage);
         }
 
         protected override void OnStart()
